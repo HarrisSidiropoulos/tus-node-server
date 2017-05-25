@@ -21,26 +21,6 @@ $ npm install tus-node-server
     });
     ```
 
-- **Google Cloud Storage**
-    ```js
-
-    server.datastore = new tus.GCSDataStore({
-        path: '/files',
-        projectId: 'project-id',
-        keyFilename: 'path/to/your/keyfile.json',
-        bucket: 'bucket-name',
-    });
-    ```
-
-- **Amazon S3** ([_coming soon_](https://github.com/tus/tus-node-server/issues/12))
-    ```js
-
-    server.datastore = new tus.S3Store({
-        path: '/files',
-        bucket: 'bucket-name',
-    });
-    ```
-
 ## Quick Start
 
 #### Use the [tus-node-deploy](https://hub.docker.com/r/bhstahl/tus-node-deploy/) Docker image
